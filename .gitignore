@@ -1,18 +1,35 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+command /setbal <player> <number>:
+	trigger:
+		execute player command "/eco set %arg-1% %arg-2%"
 
-# Other files and folders
-.settings/
-
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+#--------------------------------------------------------------------------------------------------
+command /setbalance <player> <number>:
+	trigger:
+		execute player command "/eco set %arg-1% %arg-2%"
+#--------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------
+command /givebal <player> <number>:
+	trigger:
+		execute player command "/eco give %arg-1% %arg-2%"
+#--------------------------------------------------------------------------------------------------
+command /givebalance <player> <number>:
+	trigger:
+		execute player command "/eco give %arg-1% %arg-2%"
+#--------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------
+command /resetbal <player>:
+	trigger:
+		execute player command "/eco reset %arg-1%"
+#---------------------------------------------------------------------------------------------------
+command /resetbalance <player>:
+	trigger:
+		execute player command "/eco reset %arg-1%"
+#---------------------------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------
+command /takebal <player> <number>:
+	trigger:
+		execute player command "/eco take %arg-1% %arg-2%"
+#---------------------------------------------------------------------------------------------------
+command /takebalance <player> <number>:
+	trigger:
+		execute player command "/eco take %arg-1% %arg-2%"
